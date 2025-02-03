@@ -6,7 +6,7 @@
   "scripts": {
     "build": "tsup src/app.ts --format esm --out-dir build",
     "start": "node build/app.js",
-    "dev": "tsx watch src/app.ts"
+    "dev": "tsx watch ./src/app.ts"
   },
   "keywords": [
     "users",
@@ -25,6 +25,9 @@
     "typescript": "^5.7.3"
   },
   "dependencies": {
-    "@types/node": "^22.13.0"
+    "@types/express": "^5.0.0",
+    "@types/node": "^22.13.0",
+    "dotenv": "^16.4.7",
+    "express": "^4.21.2"
   }
 }
