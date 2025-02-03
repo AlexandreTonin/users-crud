@@ -1,0 +1,30 @@
+{
+  "name": "users-crud",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.ts",
+  "scripts": {
+    "build": "tsup src/app.ts --format esm --out-dir build",
+    "start": "node build/app.js",
+    "dev": "tsx watch src/app.ts"
+  },
+  "keywords": [
+    "users",
+    "crud",
+    "nodejs",
+    "typescript",
+    "express",
+    "API"
+  ],
+  "author": "AlexandreTonin",
+  "license": "MIT",
+  "type": "module",
+  "devDependencies": {
+    "tsup": "^8.3.6",
+    "tsx": "^4.19.2",
+    "typescript": "^5.7.3"
+  },
+  "dependencies": {
+    "@types/node": "^22.13.0"
+  }
+}
